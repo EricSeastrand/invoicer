@@ -1,0 +1,227 @@
+h1, h2, h3, h4, h5, h6, body, html { margin: 0; border: 0; padding: 0; }
+
+.invoice-body {
+margin: 0em 2em;
+padding: 0 12em;
+position: relative;
+
+padding-bottom: 1em;
+white-space: nowrap;
+
+}
+
+
+
+.invoice-body::after {
+content: "Thank You!";
+font-size: 6em;
+display: inline-block;
+width: 100%;
+text-align: center;
+border-top: 10px double #000;
+position: absolute;
+left: 0;
+margin: 1em 0em;	
+}
+
+.invoice-header {
+	position: relative;
+	border-bottom: 2px solid black;
+	text-shadow: 1px 1px 0px hsl(0, 0%, 62%);
+
+}
+
+.invoice-header h1, .invoice-header h2 {
+	margin: 0;
+}
+
+.invoice-header h1 {
+	text-align: center;
+font-size: 4em;
+font-family: serif;
+text-shadow: 1px 1px 0px hsl(0, 100%, 100%), 3px 3px 9px hsl(0, 0%, 33%), -3px -3px 3px hsl(0, 0%, 75%);
+letter-spacing: .0825em
+}
+
+.invoice-header h2:first-of-type {
+	left: 0;
+	font-weight: lighter;
+	
+}
+
+.invoice-header h2 {
+	font-size: 1.2em;
+	position: absolute;
+	bottom: 0;
+	text-shadow: 1px 1px 0px hsl(0, 100%, 100%), 3px 3px 9px hsl(0, 0%, 0%);
+}
+
+
+.invoice-header h2:last-of-type {
+	right: 0;
+	font-weight: bold;
+}
+
+
+.invoice-from h2 {font-size: 1.3em;
+position: absolute;
+left: 0;}
+
+
+.the-word-invoice {
+font-size: 18em;
+color: lightgray;
+text-align: center;
+position: absolute;
+top: -0.15em;
+z-index: -1;
+left: 0;
+right: 0;
+
+}	
+
+.invoice-from .phone-numbers {
+	position: absolute;
+	right: 0;
+	top: 0.2em;
+	font-family: sans-serif;
+}
+.invoice-from {
+	position: relative;
+
+}
+
+.area-code {
+	font-style: italic;
+	margin-right: 0.33em;
+}
+
+.phone-numbers dt {
+	font-weight: bold;
+	letter-spacing: .2em;
+	text-align: right;
+}
+
+.phone-numbers dd {
+	
+	margin: 0em 1.66em;
+	display: inline-block;
+}
+
+
+.invoice-created {
+	font-size: 1em;
+	position: absolute;
+
+
+top: 0.2em;
+text-shadow: 1px 1px 0px white;
+left: 2.2em;
+right: 2.2em;
+}
+
+.invoice-from {
+position: relative;
+margin-bottom: 6em;
+text-align: center;
+font-family: sans-serif;
+border-bottom: 6px double black;
+overflow: visible;
+padding: 1.025em;
+}
+
+.street-address {letter-spacing: .0825em}
+.street-address h3 {
+font-weight: lighter;
+text-shadow: -2px -1px 2px hsl(0, 0%, 77%), 1px 1px 0px hsl(0, 100%, 100%);
+
+}
+.invoice-to {
+display: inline-block;
+font-size: 1.4em;
+border: 1px solid #000;
+margin: 0em 0.625em;
+padding: 1.025em;
+border-radius: 21px / 7px;
+font-weight: lighter;
+background: #F0F0F0;
+text-shadow: -1px -1px 0px #FFF;
+font-family: sans-serif;
+letter-spacing: 0.0125em;
+position: relative;
+vertical-align: top;
+
+
+}
+
+.invoice-items td:first-of-type {
+	letter-spacing: 0.05em;
+}
+.invoice-to::before {
+	content: "Bill To";
+	display: block;
+	position: absolute;
+	z-index: 5;
+	top: -0.667em;
+	left: -0.33em;
+	border: 1px solid #000;
+	border-radius: 9px;
+	padding: 0.125em 2.25em;
+	background: #F3F3F3;
+	font-family: serif;
+}
+.invoice-items {
+	font-size: 1.4em;
+border: 1px solid black;
+margin: 0 1em;
+padding: 1.025em;
+border-radius: 9px / 6px;
+font-weight: lighter;
+background: hsl(0, 0%, 99%);
+text-shadow: -1px -1px 0px white;
+font-family: sans-serif;
+letter-spacing: 0.125em;
+position: relative;
+vertical-align: top;
+display: inline-block;
+
+}
+
+.invoice-items table {
+	border-collapse: collapse;
+	box-shadow: 6px 6px 12px -6px black;
+	min-width: 30em;
+}
+
+sup { vertical-align: top; }
+
+.invoice-items td {
+	padding: .33em 1.33em;
+	
+}
+.invoice-items tr {
+	border-bottom: 1px solid black;
+}
+
+.invoice-items::before {
+	content: "Lawn Maintenance Performed";
+	display: block;
+	position: absolute;
+	z-index: 5;
+	top: -0.667em;
+	left: -0.33em;
+	border: 1px solid #000;
+	border-radius: 9px;
+	padding: 0.125em 2.25em;
+	background: #F3F3F3;
+	font-family: serif;
+}
+.invoice-items tr:last-of-type {
+border-top: 3px solid #000;
+font-weight: bold;
+border-bottom: 1px solid #CCC;
+}
+
+.invoice-items tr:nth-child(odd){
+
+	background-color: #F0F0F0;}
