@@ -65,8 +65,8 @@
 			}
 
 			if($_REQUEST['fertilizer']) {
-				echo invoice_item('Fertilization', 30);
-				$total += 30;
+				echo invoice_item('Fertilization', 35);
+				$total += 35;
 			}
 
 			echo invoice_item("Total DUE", $total);

@@ -11,7 +11,7 @@
 			$<input type="number" name="price" min="0" value="27.00" max="9999" step="1" size="4" 
 		    title="Enter the price that this customer gets charged for each service visit." />
 		<br/>
-			Check this box to add a $30.00 charge for fertilization.
+			Check this box to add a $35.00 charge for fertilization.
 			<input type="checkbox" name="fertilizer" />
 		<br/><br/>
 			Select which day-of-the-week that you visit this client.
