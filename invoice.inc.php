@@ -51,7 +51,7 @@
 		function MAKE_INVOICES($cost="25.00", $dayOfWeek) {
 			$total = 0;
 			
-			$dates = getDates(strtotime('first day of last month'), strtotime('last day of last month'), $dayOfWeek);
+			$dates = getDates(strtotime('first day of this month'), strtotime('last day of this month'), $dayOfWeek);
 			foreach ($dates as $i => $date) {
 				
 				if(strpos($date, 'October 30')){
@@ -125,7 +125,7 @@
 
 
 			<section class="invoice-items">
-				<table>
+				<table class="invoice-items-table" title="Double-click an item to remove it from the list.">
 <!--
 					<tr class="new-line-item">
 						<td><input type="text" class="new-line-item-name" /></td>

@@ -11,6 +11,10 @@ function prepareNewItemLine(title, price, appendTo) {
 }
 $(function(){
 
+	$('.invoice-items-table').on('dblclick', 'tr', function(){
+		$(this).hide();
+	})
+
 $('.new-line-item').on('keyup', function(e){
 	if(e.which !== 13) return;
 	
