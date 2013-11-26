@@ -86,10 +86,9 @@ right: 0;
 	top: 0.2em;
 	font-family: sans-serif;
 }
-.invoice-from {
-	position: relative;
 
-}
+
+
 
 .area-code {
 	font-style: italic;
@@ -122,12 +121,12 @@ right: 2.2em;
 
 .invoice-from {
 position: relative;
-margin-bottom: 6em;
+margin-bottom: 0;
 text-align: center;
 font-family: sans-serif;
 border-bottom: 6px double black;
 overflow: visible;
-padding: 1.025em;
+padding: 1.15em;	
 }
 
 .street-address {letter-spacing: .0825em}
@@ -183,7 +182,7 @@ font-family: sans-serif;
 letter-spacing: 0.125em;
 position: relative;
 vertical-align: top;
-display: inline-block;
+display: block;
 
 }
 
@@ -191,6 +190,7 @@ display: inline-block;
 	border-collapse: collapse;
 	box-shadow: 6px 6px 12px -6px black;
 	min-width: 30em;
+	width: 100%;
 }
 
 sup { vertical-align: top; }
@@ -217,11 +217,25 @@ sup { vertical-align: top; }
 	font-family: serif;
 }
 .invoice-items tr:last-of-type {
-border-top: 3px solid #000;
-font-weight: bold;
-border-bottom: 1px solid #CCC;
+	border-top: 3px solid #000;
+	font-weight: bold;
+	border-bottom: 1px solid #CCC;
 }
 
 .invoice-items tr:nth-child(odd){
 
-	background-color: #F0F0F0;}
+	background-color: #F0F0F0;
+}
+
+.invoice-content-wrapper > * {
+	margin: 0.67em 3.025em;
+}
+
+.invoice-content-wrapper {
+	margin-top: 1em;
+}
+
+.nocharge-service td {
+	font-style: italic;
+	padding-left: 3em;
+}
